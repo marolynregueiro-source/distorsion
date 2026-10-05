@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DISTORSIÓN — Cultura, Letras y Ruido</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="site">
+    <div class="wrap header-row">
+      <a class="logo" href="index.html">
+        <div class="mast">Distorsión</div>
+        <div class="sub">Cultura, letras y ruido</div>
+      </a>
+      <nav class="desktop" aria-label="Principal">
+        <a class="active" href="index.html">Inicio</a>
+        <a href="cronicas.html">Crónicas viscerales</a>
+        <a href="podcast.html">Podcast</a>
+        <a href="comunidad.html">Comunidad</a>
+        <a href="archivo.html">Archivo</a>
+      </nav>
+      <button class="menu-btn" id="menuBtn" type="button" aria-label="Abrir menú">☰</button>
+    </div>
+    <div class="ticker" aria-label="Tendencias"><div class="ticker-track"><span>#TerrorLatino</span><span>#MarianaEnriquez</span><span>#GrungeAndino</span><span>#PogoLiterario</span><span>#SamantaSchweblin</span><span>#MonicaOjeda</span><span>#Dillom</span><span>#DieTotenHosen</span><span>#TerrorLatino</span><span>#MarianaEnriquez</span><span>#GrungeAndino</span><span>#PogoLiterario</span><span>#SamantaSchweblin</span><span>#MonicaOjeda</span><span>#Dillom</span><span>#DieTotenHosen</span></div></div>
+  </header>
+  <div class="mobile-nav" id="mobileNav">
+    <div style="display:flex;justify-content:space-between;align-items:center">
+      <span class="display" style="font-size:1.5rem">Menú</span>
+      <button id="closeMenu" type="button" aria-label="Cerrar" style="width:2.75rem;height:2.75rem;font-size:1.5rem">×</button>
+    </div>
+    <nav style="margin-top:2.5rem;display:flex;flex-direction:column;gap:0.35rem">
+      <a class="active" href="index.html">Inicio</a>
+      <a href="cronicas.html">Crónicas viscerales</a>
+      <a href="podcast.html">Podcast</a>
+      <a href="comunidad.html">Comunidad</a>
+      <a href="archivo.html">Archivo</a>
+    </nav>
+  </div>
+  <main>
+    <section class="wrap hero">
+      <p class="kicker">Portada · Número 01</p>
+      <h1 class="display">La ‘rockstar’ del miedo: Mariana Enriquez y el pogo literario que sacude los teatros</h1>
+      <div class="hero-grid">
+        <figure style="margin:0">
+          <img class="photo-frame" src="images/mariana-enriquez.jpg" alt="Mariana Enriquez" />
+          <figcaption class="figcap">Fotografía: Rolling Stone Argentina</figcaption>
+        </figure>
+        <div>
+          <p class="lead">El terror abandonó el silencio de las bibliotecas. Lo que durante décadas se leía a solas hoy se vocifera en teatros repletos. Mariana Enriquez ya no solo publica: convoca.</p>
+          <div class="tags">
+            <a class="tag" href="archivo.html?q=TerrorLatino">#TerrorLatino</a>
+            <a class="tag" href="archivo.html?q=MarianaEnriquez">#MarianaEnriquez</a>
+            <a class="tag" href="archivo.html?q=PogoLiterario">#PogoLiterario</a>
+          </div>
+          <p style="margin-top:1.5rem"><a class="btn btn-outline" href="articulos/mariana-enriquez.html">Leer la crónica →</a></p>
+          <div class="player" data-player data-duration="262">
+            <div class="player-top">
+              <button class="play-btn" type="button" data-play aria-label="Reproducir">▶</button>
+              <div>
+                <p class="kicker" style="color:var(--muted)">Audio embebido</p>
+                <p class="display" style="font-size:1.15rem;margin:0.25rem 0 0">Mariana Enriquez lee (y el teatro responde)</p>
+                <p class="muted" style="margin:0.25rem 0 0;font-size:0.9rem">Episodio 01 · fragmento de portada</p>
+              </div>
+            </div>
+            <div class="bars" aria-hidden="true"></div>
+            <div class="progress-row">
+              <span data-cur>0:00</span>
+              <div class="progress"><i></i></div>
+              <span data-tot>0:00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="wrap">
+      <div class="section-head">
+        <h2 class="display">Notas secundarias</h2>
+        <a class="kicker" style="color:var(--muted)" href="cronicas.html">Ver todas</a>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <a class="overflow" href="articulos/monica-ojeda.html"><img class="photo-frame thumb photo-urban" src="images/monica-ojeda.jpg" alt="Mónica Ojeda" /></a>
+          <p class="kicker" style="margin-top:1rem">Grunge andino</p>
+          <h3 class="display"><a href="articulos/monica-ojeda.html">Mónica Ojeda y el ruido blanco andino</a></h3>
+          <div class="tags"><a class="tag" href="archivo.html?q=MonicaOjeda">#MonicaOjeda</a><a class="tag" href="archivo.html?q=GrungeAndino">#GrungeAndino</a></div>
+        </article>
+        <article class="card">
+          <a class="overflow" href="articulos/samanta-schweblin.html"><img class="photo-frame thumb photo-toxic" src="images/samanta-schweblin.jpg" alt="Samanta Schweblin" /></a>
+          <p class="kicker" style="margin-top:1rem">Terror ambiental</p>
+          <h3 class="display"><a href="articulos/samanta-schweblin.html">Samanta Schweblin: terror tóxico</a></h3>
+          <div class="tags"><a class="tag" href="archivo.html?q=SamantaSchweblin">#SamantaSchweblin</a><a class="tag" href="archivo.html?q=TerrorAmbiental">#TerrorAmbiental</a></div>
+        </article>
+      </div>
+    </section>
+    <section class="cta" id="comunidad-cta">
+      <div class="wrap cta-grid">
+        <div>
+          <p class="kicker" style="color:rgba(242,239,230,0.8)">Comunidad</p>
+          <h2 class="display">¿Irías a un recital de literatura?</h2>
+          <p>El terror salió de la biblioteca y se subió al escenario. Votá y sumate al pogo.</p>
+          <div class="actions">
+            <a class="btn btn-bone" href="comunidad.html#encuesta">Votar en la encuesta →</a>
+            <a class="btn btn-outline" href="comunidad.html#pogo">Sumate al pogo</a>
+          </div>
+        </div>
+        <div class="poll-box" data-poll>
+          <p class="kicker" style="color:var(--muted)">Encuesta abierta</p>
+          <button type="button" class="poll-opt" data-vote="si"><span class="bar"></span><span class="row"><span><span class="label">Sí, sin dudar</span></span><span data-pct></span></span></button>
+          <button type="button" class="poll-opt" data-vote="depende"><span class="bar"></span><span class="row"><span><span class="label">Depende del lineup</span></span><span data-pct></span></span></button>
+          <button type="button" class="poll-opt" data-vote="no"><span class="bar"></span><span class="row"><span><span class="label">Prefiero el silencio</span></span><span data-pct></span></span></button>
+          <p class="poll-meta" data-poll-meta></p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site">
+    <div class="wrap footer-grid">
+      <div>
+        <p class="display" style="font-size:1.5rem;margin:0">Distorsión</p>
+        <p class="muted" style="margin:0.5rem 0 0;max-width:16rem;font-size:0.9rem">Revista digital de cultura, letras y ruido.</p>
+      </div>
+      <nav aria-label="Pie">
+        <a href="index.html">Inicio</a>
+        <a href="cronicas.html">Crónicas viscerales</a>
+        <a href="podcast.html">Podcast</a>
+        <a href="comunidad.html">Comunidad</a>
+        <a href="archivo.html">Archivo</a>
+      </nav>
+      <p class="muted" style="font-size:0.9rem;margin:0">Crédito foto portada: Rolling Stone Argentina.</p>
+    </div>
+    <div class="wrap footer-bar">
+      <span>N° 01 · Buenos Aires · 2026</span>
+      <span>ISSN 0000-3420</span>
+    </div>
+  </footer>
+  <script src="js/images-a.js"></script>
+  <script src="js/images-b.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

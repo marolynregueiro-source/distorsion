@@ -1,0 +1,16 @@
+DISTORSIÓN — Paquete local
+==========================
+
+Cómo verlo
+----------
+1. Descomprimí este ZIP en cualquier carpeta.
+2. Abrí index.html con doble clic (Chrome, Edge o Firefox).
+3. Navegá Inicio, Crónicas, Podcast, Comunidad y Archivo.
+
+Funciona sin internet (salvo las tipografías de Google Fonts;
+si no hay red, se usan tipografías del sistema).
+
+La encuesta y el chat del pogo se guardan en tu navegador
+(localStorage).
+
+No hace falta instalar Node ni ningún programa extra.

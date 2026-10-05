@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Archivo — DISTORSIÓN</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="site">
+    <div class="wrap header-row">
+      <a class="logo" href="index.html"><div class="mast">Distorsión</div><div class="sub">Cultura, letras y ruido</div></a>
+      <nav class="desktop" aria-label="Principal">
+        <a href="index.html">Inicio</a><a href="cronicas.html">Crónicas viscerales</a>
+        <a href="podcast.html">Podcast</a><a href="comunidad.html">Comunidad</a><a class="active" href="archivo.html">Archivo</a>
+      </nav>
+      <button class="menu-btn" id="menuBtn" type="button" aria-label="Abrir menú">☰</button>
+    </div>
+    <div class="ticker" aria-label="Tendencias"><div class="ticker-track"><span>#Archivo</span><span>#TerrorLatino</span><span>#Archivo</span><span>#TerrorLatino</span></div></div>
+  </header>
+  <div class="mobile-nav" id="mobileNav">
+    <div style="display:flex;justify-content:space-between;align-items:center">
+      <span class="display" style="font-size:1.5rem">Menú</span>
+      <button id="closeMenu" type="button" style="width:2.75rem;height:2.75rem;font-size:1.5rem">×</button>
+    </div>
+    <nav style="margin-top:2.5rem;display:flex;flex-direction:column;gap:0.35rem">
+      <a href="index.html">Inicio</a><a href="cronicas.html">Crónicas</a><a href="podcast.html">Podcast</a>
+      <a href="comunidad.html">Comunidad</a><a class="active" href="archivo.html">Archivo</a>
+    </nav>
+  </div>
+  <main>
+    <section class="wrap page">
+      <p class="kicker">Índice</p>
+      <h1 class="display">Archivo</h1>
+      <div class="search-row">
+        <input class="field" id="archivoQ" placeholder="Buscar: Enriquez, Ojeda, pogo…" style="min-height:3rem" />
+      </div>
+      <div class="filter-tags">
+        <button type="button" class="on" data-filter-all>Todo</button>
+        <button type="button" data-filter-tag="MarianaEnriquez">#MarianaEnriquez</button>
+        <button type="button" data-filter-tag="MonicaOjeda">#MonicaOjeda</button>
+        <button type="button" data-filter-tag="SamantaSchweblin">#SamantaSchweblin</button>
+      </div>
+      <div class="cards">
+        <div data-article="mariana enriquez terror latino pogo">
+          <article class="card">
+            <a class="overflow" href="articulos/mariana-enriquez.html"><img class="photo-frame thumb" src="images/mariana-enriquez.jpg" alt="" /></a>
+            <h3 class="display" style="margin-top:1rem"><a href="articulos/mariana-enriquez.html">Mariana Enriquez</a></h3>
+          </article>
+        </div>
+        <div data-article="monica ojeda grunge andino">
+          <article class="card">
+            <a class="overflow" href="articulos/monica-ojeda.html"><img class="photo-frame thumb photo-urban" src="images/monica-ojeda.jpg" alt="" /></a>
+            <h3 class="display" style="margin-top:1rem"><a href="articulos/monica-ojeda.html">Mónica Ojeda</a></h3>
+          </article>
+        </div>
+        <div data-article="samanta schweblin terror ambiental">
+          <article class="card">
+            <a class="overflow" href="articulos/samanta-schweblin.html"><img class="photo-frame thumb photo-toxic" src="images/samanta-schweblin.jpg" alt="" /></a>
+            <h3 class="display" style="margin-top:1rem"><a href="articulos/samanta-schweblin.html">Samanta Schweblin</a></h3>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site"><div class="wrap footer-bar"><span>DISTORSIÓN</span><span><a href="index.html">Inicio</a></span></div></footer>
+  <script src="js/app.js"></script>
+</body>
+</html>

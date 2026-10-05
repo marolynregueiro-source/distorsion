@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Podcast — DISTORSIÓN</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="site">
+    <div class="wrap header-row">
+      <a class="logo" href="index.html"><div class="mast">Distorsión</div><div class="sub">Cultura, letras y ruido</div></a>
+      <nav class="desktop" aria-label="Principal">
+        <a href="index.html">Inicio</a><a href="cronicas.html">Crónicas viscerales</a>
+        <a class="active" href="podcast.html">Podcast</a><a href="comunidad.html">Comunidad</a><a href="archivo.html">Archivo</a>
+      </nav>
+      <button class="menu-btn" id="menuBtn" type="button" aria-label="Abrir menú">☰</button>
+    </div>
+    <div class="ticker" aria-label="Tendencias"><div class="ticker-track"><span>#Podcast</span><span>#TerrorLatino</span><span>#Podcast</span><span>#TerrorLatino</span></div></div>
+  </header>
+  <div class="mobile-nav" id="mobileNav">
+    <div style="display:flex;justify-content:space-between;align-items:center">
+      <span class="display" style="font-size:1.5rem">Menú</span>
+      <button id="closeMenu" type="button" style="width:2.75rem;height:2.75rem;font-size:1.5rem">×</button>
+    </div>
+    <nav style="margin-top:2.5rem;display:flex;flex-direction:column;gap:0.35rem">
+      <a href="index.html">Inicio</a><a href="cronicas.html">Crónicas</a>
+      <a class="active" href="podcast.html">Podcast</a><a href="comunidad.html">Comunidad</a><a href="archivo.html">Archivo</a>
+    </nav>
+  </div>
+  <main>
+    <section class="wrap page">
+      <p class="kicker">Señal</p>
+      <h1 class="display">Podcast</h1>
+      <p class="muted">Lecturas, distorsión y comentario.</p>
+      <div class="player" data-player data-duration="262" style="margin-top:2rem">
+        <div class="player-top">
+          <button class="play-btn" type="button" data-play aria-label="Reproducir">▶</button>
+          <div>
+            <p class="kicker" style="color:var(--muted)">Episodio 01</p>
+            <p class="display" style="font-size:1.15rem;margin:0.25rem 0 0">Mariana Enriquez lee (y el teatro responde)</p>
+          </div>
+        </div>
+        <div class="bars" aria-hidden="true"></div>
+        <div class="progress-row"><span data-cur>0:00</span><div class="progress"><i></i></div><span data-tot>0:00</span></div>
+      </div>
+    </section>
+  </main>
+  <footer class="site"><div class="wrap footer-bar"><span>DISTORSIÓN</span><span><a href="index.html">Inicio</a></span></div></footer>
+  <script src="js/app.js"></script>
+</body>
+</html>

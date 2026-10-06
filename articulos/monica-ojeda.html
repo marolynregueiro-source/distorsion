@@ -3,37 +3,71 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Mónica Ojeda — DISTORSIÓN</title>
+  <title>Mónica Ojeda y el ruido blanco andino — DISTORSIÓN</title>
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="../css/styles.css" />
 </head>
 <body>
   <div class="grain" aria-hidden="true"></div>
   <header class="site">
     <div class="wrap header-row">
-      <a class="logo" href="../index.html"><div class="mast">Distorsión</div><div class="sub">Cultura, letras y ruido</div></a>
-      <nav class="desktop"><a href="../index.html">Inicio</a><a class="active" href="../cronicas.html">Crónicas</a></nav>
-      <button class="menu-btn" id="menuBtn" type="button">☰</button>
+      <a class="logo" href="../index.html">
+        <div class="mast">Distorsión</div>
+        <div class="sub">Cultura, letras y ruido</div>
+      </a>
+      <nav class="desktop" aria-label="Principal">
+        <a href="../index.html">Inicio</a>
+        <a class="active" href="../cronicas.html">Crónicas viscerales</a>
+        <a href="../podcast.html">Podcast</a>
+        <a href="../comunidad.html">Comunidad</a>
+        <a href="../archivo.html">Archivo</a>
+      </nav>
+      <button class="menu-btn" id="menuBtn" type="button" aria-label="Abrir menú">☰</button>
     </div>
   </header>
   <div class="mobile-nav" id="mobileNav">
-    <button id="closeMenu" type="button" style="width:2.75rem;height:2.75rem;font-size:1.5rem">×</button>
-    <nav style="margin-top:2rem;display:flex;flex-direction:column"><a href="../index.html">Inicio</a><a href="../cronicas.html">Crónicas</a></nav>
+    <div style="display:flex;justify-content:space-between;align-items:center">
+      <span class="display" style="font-size:1.5rem">Menú</span>
+      <button id="closeMenu" type="button" aria-label="Cerrar" style="width:2.75rem;height:2.75rem;font-size:1.5rem">×</button>
+    </div>
+    <nav style="margin-top:2.5rem;display:flex;flex-direction:column;gap:0.35rem">
+      <a href="../index.html">Inicio</a>
+      <a class="active" href="../cronicas.html">Crónicas viscerales</a>
+      <a href="../podcast.html">Podcast</a>
+      <a href="../comunidad.html">Comunidad</a>
+      <a href="../archivo.html">Archivo</a>
+    </nav>
   </div>
   <main>
     <article class="wrap page article-body">
       <p class="kicker">Grunge andino</p>
-      <h1 class="display" style="font-size:clamp(2rem,1.2rem+3vw,3.5rem)">Mónica Ojeda y el ruido blanco andino</h1>
+      <h1 class="display" style="font-size:clamp(2rem,1.2rem+3vw,3.5rem)">Mónica Ojeda y el ruido blanco andino: violencia, obsesión y distorsión</h1>
+      <p class="lead muted" style="margin-top:1rem">En la obra de Ojeda el paisaje no consuela: distorsiona.</p>
+      <p class="figcap" style="margin-top:1rem">Lucía Ferrante · Septiembre 2026 · 6 min de lectura</p>
       <figure style="margin:2rem 0 0">
-        <img class="photo-frame photo-urban" src="../images/monica-ojeda.jpg" alt="" />
+        <img class="photo-frame photo-urban" src="../images/monica-ojeda.jpg" alt="Ciudad andina de noche, alto contraste" />
+        <figcaption class="figcap">Fotografía: Distorsión / archivo de campo</figcaption>
       </figure>
-      <p class="lead" style="margin-top:2rem">Ojeda escribe el Andes como si fuera una pedalera. Violencia, obsesión y distorsión no son temas: son la mezcla.</p>
+      <p class="lead" style="margin-top:2rem">Hay un sonido que recorre Mandíbula, Nefando y Las voladoras: no es el de la montaña postal, sino el de un amplificador dejado al máximo contra la piedra. Mónica Ojeda escribe el Andes como si fuera una pedalera. Violencia, obsesión y distorsión no son temas: son la mezcla.</p>
       <blockquote class="pull display">El paisaje no consuela: distorsiona.</blockquote>
+      <div class="body">
+        <p>El llamado “gótico andino” nunca le quedó del todo bien, y menos ahora, cuando la etiqueta amenaza con volverla un souvenir. Ojeda no ilustra mitos: los pone a trabajar. Las niñas de Mandíbula no habitan un cuento de terror escolar; habitan un sistema de deseo y de clase que muerde hasta el hueso. El paisaje —el páramo, el colegio de monjas, el zumbido de los insectos— funciona como ruido blanco: tapa y, al mismo tiempo, revela.</p>
+        <p>Ese ruido es político. En un continente que insiste en vender la montaña como origen puro, Ojeda la ensucia con lengua, con sexo, con fe podrida y con una violencia que no pide perdón literario. Leerla al lado de Enriquez o de Schweblin no es armar un “pack de terror latino”: es oír tres frecuencias distintas de un mismo amplificador.</p>
+        <p>Si hay grunge andino, no es estética de afiche. Es la idea de que la belleza de la cordillera y el daño que se le hace al cuerpo pueden ocupar la misma frase, sin que ninguna de las dos gane. Ojeda escribe como quien afina un instrumento que siempre está un poco desafinado a propósito.</p>
+      </div>
       <div class="tags" style="margin-top:2rem">
         <a class="tag" href="../archivo.html?q=MonicaOjeda">#MonicaOjeda</a>
         <a class="tag" href="../archivo.html?q=GrungeAndino">#GrungeAndino</a>
       </div>
+      <p style="margin-top:2.5rem"><a class="btn btn-outline" href="../cronicas.html">← Volver a Crónicas</a></p>
     </article>
   </main>
+  <footer class="site">
+    <div class="wrap footer-bar">
+      <span>DISTORSIÓN · N° 01 · 2026</span>
+      <span><a href="../index.html">Inicio</a></span>
+    </div>
+  </footer>
   <script src="../js/app.js"></script>
 </body>
 </html>

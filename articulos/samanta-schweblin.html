@@ -3,37 +3,71 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Samanta Schweblin — DISTORSIÓN</title>
+  <title>Samanta Schweblin: terror tóxico — DISTORSIÓN</title>
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="../css/styles.css" />
 </head>
 <body>
   <div class="grain" aria-hidden="true"></div>
   <header class="site">
     <div class="wrap header-row">
-      <a class="logo" href="../index.html"><div class="mast">Distorsión</div><div class="sub">Cultura, letras y ruido</div></a>
-      <nav class="desktop"><a href="../index.html">Inicio</a><a class="active" href="../cronicas.html">Crónicas</a></nav>
-      <button class="menu-btn" id="menuBtn" type="button">☰</button>
+      <a class="logo" href="../index.html">
+        <div class="mast">Distorsión</div>
+        <div class="sub">Cultura, letras y ruido</div>
+      </a>
+      <nav class="desktop" aria-label="Principal">
+        <a href="../index.html">Inicio</a>
+        <a class="active" href="../cronicas.html">Crónicas viscerales</a>
+        <a href="../podcast.html">Podcast</a>
+        <a href="../comunidad.html">Comunidad</a>
+        <a href="../archivo.html">Archivo</a>
+      </nav>
+      <button class="menu-btn" id="menuBtn" type="button" aria-label="Abrir menú">☰</button>
     </div>
   </header>
   <div class="mobile-nav" id="mobileNav">
-    <button id="closeMenu" type="button" style="width:2.75rem;height:2.75rem;font-size:1.5rem">×</button>
-    <nav style="margin-top:2rem;display:flex;flex-direction:column"><a href="../index.html">Inicio</a><a href="../cronicas.html">Crónicas</a></nav>
+    <div style="display:flex;justify-content:space-between;align-items:center">
+      <span class="display" style="font-size:1.5rem">Menú</span>
+      <button id="closeMenu" type="button" aria-label="Cerrar" style="width:2.75rem;height:2.75rem;font-size:1.5rem">×</button>
+    </div>
+    <nav style="margin-top:2.5rem;display:flex;flex-direction:column;gap:0.35rem">
+      <a href="../index.html">Inicio</a>
+      <a class="active" href="../cronicas.html">Crónicas viscerales</a>
+      <a href="../podcast.html">Podcast</a>
+      <a href="../comunidad.html">Comunidad</a>
+      <a href="../archivo.html">Archivo</a>
+    </nav>
   </div>
   <main>
     <article class="wrap page article-body">
       <p class="kicker">Terror ambiental</p>
-      <h1 class="display" style="font-size:clamp(2rem,1.2rem+3vw,3.5rem)">Samanta Schweblin: terror tóxico</h1>
+      <h1 class="display" style="font-size:clamp(2rem,1.2rem+3vw,3.5rem)">Samanta Schweblin: terror tóxico y la cuenta regresiva del desastre</h1>
+      <p class="lead muted" style="margin-top:1rem">El horror más preciso de esta década cabe en la distancia que hay entre una madre y su hijo.</p>
+      <p class="figcap" style="margin-top:1rem">Marcos Vidal · Agosto 2026 · 6 min de lectura</p>
       <figure style="margin:2rem 0 0">
-        <img class="photo-frame photo-toxic" src="../images/samanta-schweblin.jpg" alt="" />
+        <img class="photo-frame photo-toxic" src="../images/samanta-schweblin.jpg" alt="Paisaje rural tóxico con niebla verdosa" />
+        <figcaption class="figcap">Fotografía: Distorsión / still de campo</figcaption>
       </figure>
-      <p class="lead" style="margin-top:2rem">En Distancia de rescate el desastre no llega con una explosión: ya estaba en el agua.</p>
+      <p class="lead" style="margin-top:2rem">En Distancia de rescate el desastre no llega con una explosión: ya estaba en el agua, en el campo, en el aliento. Samanta Schweblin perfeccionó un terror que no necesita monstruos porque el monstruo es el modelo productivo. La cuenta regresiva no está en un reloj. Está en el cuerpo.</p>
       <blockquote class="pull display">El desastre ya estaba en el agua.</blockquote>
+      <div class="body">
+        <p>Hay una escena —un hijo, una madre, unos metros que de pronto no alcanzan— que se volvió el diagrama de una época. Schweblin entendió antes que muchos novelistas “serios” que el extractivismo, los agrotóxicos y la fábula del campo argentino no eran tema de informe: eran materia de pesadilla. El tono, casi clínico, es parte de la trampa. Cuanto más limpia la prosa, más sucia el agua.</p>
+        <p>Kentukis, Pájaros en la boca, y más tarde las derivas de un realismo que ya no puede llamarse realismo, confirman el método: reducir el mundo a un dispositivo y ver qué queda de lo humano cuando el dispositivo se enciende. No hay consuelo ecológico. Hay una pregunta que esta revista insiste en hacerle a la literatura de terror: ¿de qué sirve el miedo si no nombra al responsable?</p>
+        <p>Schweblin no escribe panfleto. Escribe la cuenta regresiva como experiencia íntima. Por eso su terror es tóxico en el sentido literal y en el figurado: se pega, se hereda, se lleva en la ropa. Y, como el de Enriquez, funciona mejor cuando se lee en voz alta: el desastre, al fin, siempre fue colectivo.</p>
+      </div>
       <div class="tags" style="margin-top:2rem">
         <a class="tag" href="../archivo.html?q=SamantaSchweblin">#SamantaSchweblin</a>
         <a class="tag" href="../archivo.html?q=TerrorAmbiental">#TerrorAmbiental</a>
       </div>
+      <p style="margin-top:2.5rem"><a class="btn btn-outline" href="../cronicas.html">← Volver a Crónicas</a></p>
     </article>
   </main>
+  <footer class="site">
+    <div class="wrap footer-bar">
+      <span>DISTORSIÓN · N° 01 · 2026</span>
+      <span><a href="../index.html">Inicio</a></span>
+    </div>
+  </footer>
   <script src="../js/app.js"></script>
 </body>
 </html>

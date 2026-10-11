@@ -31,9 +31,23 @@ nav.desktop { display: none; gap: 0.25rem; align-items: center; }
 nav.desktop a { padding: 0.5rem 0.75rem; font-family: var(--font-display); font-size: 0.6875rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--muted); }
 nav.desktop a:hover, nav.desktop a.active { color: var(--accent); }
 .menu-btn { width: 2.75rem; height: 2.75rem; display: inline-flex; align-items: center; justify-content: center; }
-.ticker { overflow: hidden; background: var(--accent); border-bottom: 1px solid var(--border); }
+.ticker {
+  overflow: hidden;
+  background: var(--accent);
+  border-bottom: 1px solid var(--border);
+  max-height: 2.75rem;
+  opacity: 1;
+  transition: max-height 0.35s ease, opacity 0.25s ease, border-width 0.25s ease;
+}
+.ticker.is-hidden {
+  max-height: 0;
+  opacity: 0;
+  border-bottom-width: 0;
+  pointer-events: none;
+}
 .ticker-track { display: flex; width: max-content; animation: ticker 32s linear infinite; padding: 0.5rem 0; }
 .ticker-track:hover { animation-play-state: paused; }
+.ticker.is-hidden .ticker-track { animation-play-state: paused; }
 .ticker span { display: flex; align-items: center; padding: 0 1rem; font-family: var(--font-display); font-size: 0.6875rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent-fg); }
 .ticker span::before { content: ""; width: 0.375rem; height: 0.375rem; border-radius: 999px; background: var(--bone); margin-right: 1rem; }
 @keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }

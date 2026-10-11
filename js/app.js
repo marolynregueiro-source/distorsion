@@ -10,6 +10,32 @@
     });
   }
 
+  /* Marquesina: visible al inicio y mientras la imagen principal del articulo esta a la vista */
+  var ticker = document.querySelector('.ticker');
+  if (ticker) {
+    var imageVisible = false;
+    var figures = Array.prototype.slice.call(document.querySelectorAll('main figure')).filter(function (f) {
+      return !f.closest('.card');
+    });
+    function updateTicker() {
+      var atTop = window.scrollY < 64;
+      if (atTop || imageVisible) {
+        ticker.classList.remove('is-hidden');
+      } else {
+        ticker.classList.add('is-hidden');
+      }
+    }
+    if ('IntersectionObserver' in window && figures.length) {
+      var io = new IntersectionObserver(function (entries) {
+        imageVisible = entries.some(function (e) { return e.isIntersecting; });
+        updateTicker();
+      }, { threshold: 0.12, rootMargin: '0px 0px -10% 0px' });
+      figures.forEach(function (f) { io.observe(f); });
+    }
+    window.addEventListener('scroll', updateTicker, { passive: true });
+    updateTicker();
+  }
+
   document.querySelectorAll('[data-player]').forEach(function (root) {
     var duration = parseFloat(root.getAttribute('data-duration') || '262');
     var elapsed = 0, playing = false, raf = null, last = null;

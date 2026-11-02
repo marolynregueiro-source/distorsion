@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Oswald:wght@500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Oswald:wght@500;600;700&family=Space+Grotesk:wght@400;500;700&display=swap");
 :root {
   --bg: #0a0a0a; --surface: #141414; --surface-2: #1c1c1c;
   --fg: #f2efe6; --muted: #9a9488; --faint: #6b665c;
@@ -6,6 +6,7 @@
   --border: #2a2a2a; --bone: #f2efe6; --ink: #0a0a0a;
   --font-sans: "IBM Plex Sans", system-ui, sans-serif;
   --font-display: "Oswald", Impact, "Arial Narrow", sans-serif;
+  --font-logo: "Space Grotesk", system-ui, sans-serif;
 }
 * { box-sizing: border-box; }
 html { -webkit-font-smoothing: antialiased; background: var(--bg); color: var(--fg); }
@@ -24,8 +25,25 @@ img { max-width: 100%; display: block; }
 .photo-toxic { filter: contrast(1.08) saturate(1.15) hue-rotate(8deg); }
 header.site { position: sticky; top: 0; z-index: 40; background: rgba(10,10,10,0.95); backdrop-filter: blur(6px); }
 .header-row { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 0.75rem 0; }
-.logo .mast { font-family: var(--font-display); font-size: clamp(1.85rem, 1.2rem + 2vw, 2.75rem); text-transform: uppercase; line-height: 1; letter-spacing: 0.02em; }
-.logo .sub { margin-top: 0.15rem; font-family: var(--font-display); font-size: 0.6875rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--muted); }
+.logo .mast {
+  font-family: var(--font-logo);
+  font-size: clamp(1.65rem, 1.1rem + 1.8vw, 2.4rem);
+  text-transform: none;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  font-weight: 700;
+}
+.logo .logo-dis {
+  font-weight: 400;
+  color: var(--muted);
+  letter-spacing: 0.02em;
+}
+.logo .logo-tor {
+  font-weight: 700;
+  color: var(--fg);
+  letter-spacing: 0.04em;
+}
+.logo .sub { margin-top: 0.2rem; font-family: var(--font-logo); font-size: 0.65rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--muted); font-weight: 500; }
 nav.desktop { display: none; gap: 0.25rem; align-items: center; }
 @media (min-width: 1024px) { nav.desktop { display: flex; } .menu-btn { display: none !important; } }
 nav.desktop a { padding: 0.5rem 0.75rem; font-family: var(--font-display); font-size: 0.6875rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--muted); }

@@ -9,7 +9,7 @@
   --font-logo: "Syne", system-ui, sans-serif;
 }
 * { box-sizing: border-box; }
-html { -webkit-font-smoothing: antialiased; background: var(--bg(--bg); color: var(--fg); }
+html { -webkit-font-smoothing: antialiased; background: var(--bg); color: var(--fg); }
 body { margin: 0; font-family: var(--font-sans); background: var(--bg); color: var(--fg); min-height: 100dvh; line-height: 1.55; }
 a { color: inherit; text-decoration: none; }
 button { font: inherit; cursor: pointer; border: 0; background: none; color: inherit; }
